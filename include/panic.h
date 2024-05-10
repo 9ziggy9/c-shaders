@@ -5,6 +5,9 @@
 
 typedef enum {
   WIN_INIT_FAIL = 100,
+  WIN_ALLOC_FAIL,
+  SHADER_COMP_FAIL,
+  GLAD_INIT_FAIL,
 } panic_codes;
 
 #define CLRSTR(STR,CLR) "\033[38;5;" #CLR "m" STR "\033[32;0m"
